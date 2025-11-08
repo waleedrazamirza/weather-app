@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <div class="app-header">
+            <div class="app-title">
+                <span>🌤️</span>
+                <span>Weather</span>
+            </div>
+            <div class="date-display" id="current-date">Monday, June 12</div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">
+                <span>Search</span>
+                <span>🔍</span>
+            </button>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>Loading weather data...</p>
+        </div>
+
+        <div class="error-message" id="error-message">
+            <p>City not found. Please try again.</p>
+        </div>
+
+        <div class="weather-result" id="weather-result">
+            <div class="weather-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="weather icon" id="weather-icon">
+            </div>
+            <div class="temperature" id="temperature">25°C</div>
+            <div class="city" id="city-name">Lahore</div>
+            <div class="weather-description" id="weather-description">Partly Cloudy</div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div class="detail-icon">💧</div>
+                    <div class="detail-text">
+                        <div>Humidity</div>
+                        <div class="detail-value" id="humidity">65%</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">💨</div>
+                    <div class="detail-text">
+                        <div>Wind</div>
+                        <div class="detail-value" id="wind-speed">12 km/h</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🔽</div>
+                    <div class="detail-text">
+                        <div>Min Temp</div>
+                        <div class="detail-value" id="min-temp">22°C</div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">🔼</div>
+                    <div class="detail-text">
+                        <div>Max Temp</div>
+                        <div class="detail-value" id="max-temp">28°C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
